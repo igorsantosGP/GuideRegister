@@ -5,6 +5,7 @@ include_once 'telas/includes/funcoesDeApoio.php';
 
 $temErros = false;
 $errosValidacao = array();
+$exibirTabela= FALSE;
 
 // Validaçao Cadastro de aluno
 if (temPost()) {
@@ -97,6 +98,14 @@ if (temPost()) {
         die();
     }
 }  
+
+
+//Validação Pesquisa de Aluno
+
+if (temPost() && $_POST['pesquisar']) {
+    
+}
+
 
 //Recuperar campos Preenchidos
 $dadosAluno = array(
